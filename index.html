@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Bustos — Portafolio</title>
+  <meta name="description" content="Portafolio de Gabriel Bustos, desarrollador web y de aplicaciones móviles." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio">Gabriel Bustos</a>
+    <button class="nav-tgl" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+      <span aria-hidden="true"></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== INICIO ===== -->
+    <section id="inicio" class="hero">
+      <h1 class="hero-title">
+        Hola, soy Gabriel.<br />
+        Construyo interfaces y aplicaciones.
+      </h1>
+      <p class="hero-text">
+        Estudiante de Desarrollo de Aplicaciones Móviles. Trabajo con
+        HTML, CSS y JavaScript para armar sitios y apps que funcionan
+        bien y se sienten cuidados en cada detalle.
+      </p>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="projects">
+      <h2 class="section-title">Proyectos</h2>
+
+      <ul class="project-list">
+        <li class="project-row">
+          <div class="project-name">
+            <h3>Billetera Virtual</h3>
+          </div>
+          <div class="project-details">
+            <p>
+              App móvil de billetera virtual con una sección de
+              transferencias entre cuentas, desarrollada para la
+              materia Desarrollo de Aplicaciones Móviles 1.
+            </p>
+            <div class="tags">
+              <span class="tag">Expo</span>
+              <span class="tag">React Native</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="project-row">
+          <div class="project-name">
+            <h3>Proyecto Vite</h3>
+          </div>
+          <div class="project-details">
+            <p>
+              Sitio web construido con Vite y Tailwind, con un tema
+              neón propio (Chakra Petch, Exo 2 y Share Tech Mono).
+            </p>
+            <div class="tags">
+              <span class="tag">Vite</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </li>
+
+        <!--
+          Para agregar un proyecto nuevo, copiá un <li class="project-row">
+          completo y cambiá el título, la descripción y los tags.
+        -->
+      </ul>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="contact">
+      <h2 class="section-title">Contacto</h2>
+      <p class="contact-text">
+        ¿Charlamos sobre un proyecto? Escribime.
+      </p>
+      <ul class="contact-links">
+        <li><a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a></li>
+        <li><a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Nombre Apellido</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
