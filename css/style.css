@@ -198,19 +198,6 @@ button { font: inherit; }
 .text-link { border: 1px solid var(--line); background: var(--card); }
 .text-link:hover { border-color: var(--accent); }
 .text-link span { color: var(--accent); }
-.scroll-note {
-  position: absolute;
-  z-index: 1;
-  bottom: 1.5rem;
-  left: var(--gutter);
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  color: var(--soft);
-  font: 500 0.62rem var(--font-display);
-  letter-spacing: 0.14em;
-}
-.scroll-note span { width: 28px; height: 3px; border-radius: 3px; background: var(--grad); }
 
 /* Soluciones */
 .solutions { padding-block: 6rem 6.5rem; }
@@ -218,7 +205,6 @@ button { font: inherit; }
 .section-heading .eyebrow { margin-bottom: 1.2rem; }
 .section-heading h2,
 .contact h2 { font-size: clamp(2.3rem, 4.3vw, 4.1rem); }
-.section-intro { max-width: 34ch; margin: 0 0 0.3rem; color: var(--soft); }
 .solution-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.1rem; }
 .solution-item {
   position: relative;
@@ -375,10 +361,6 @@ button { font: inherit; }
 }
 .contact .eyebrow { margin-bottom: 1.4rem; }
 .contact-copy { max-width: 49ch; margin: 1.25rem 0 1.8rem; color: var(--soft); font-size: 0.95rem; }
-.contact-side { display: flex; min-height: 245px; flex-direction: column; align-items: flex-end; justify-content: space-between; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); }
-.contact-index { color: var(--soft); font: 600 0.65rem var(--font-display); letter-spacing: 0.1em; }
-.contact-coordinate { color: var(--accent); font: 700 1.9rem/1.35 var(--font-display); text-align: right; }
-.contact-email { color: var(--accent); font: 600 0.75rem var(--font-display); }
 .site-footer { display: flex; min-height: 90px; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem var(--gutter); color: var(--soft); font-size: 0.78rem; }
 .footer-brand { display: grid; width: 38px; flex: none; aspect-ratio: 1; place-items: center; border-radius: 50%; background: var(--grad); color: #0c0620; font: 700 0.72rem var(--font-display); }
 .site-footer p { flex: 1; margin: 0; }
@@ -475,3 +457,43 @@ button { font: inherit; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .contact-links a { padding: 0.45rem 0.95rem; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font: 600 0.72rem var(--font-display); transition: border-color 0.2s; }
 .contact-links a:hover { border-color: var(--accent); }
+
+.contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-bottom: 1.4rem; }
+
+.contact-form { display: grid; gap: 1rem; padding: 1.75rem; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); }
+.contact-form h3 { margin: 0; font: 700 1.25rem var(--font-display); }
+.contact-form label { display: grid; gap: 0.4rem; color: var(--soft); font: 600 0.78rem var(--font-display); }
+.contact-form input:not([type="hidden"]):not(.hp),
+.contact-form textarea {
+  width: 100%; padding: 0.8rem 1.1rem; border: 1px solid var(--line); border-radius: 18px;
+  background: var(--bg); color: var(--ink); font: 500 0.95rem var(--font-body); resize: vertical;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--accent); box-shadow: var(--glow); }
+.contact-form .button { border: 0; cursor: pointer; }
+.contact-form .button:disabled { opacity: 0.6; cursor: wait; }
+.form-status { min-height: 1.4em; margin: 0; font-size: 0.88rem; color: var(--soft); }
+.form-status.is-ok { color: var(--accent); }
+.form-status.is-error { color: #ff6b8a; }
+.hp { position: absolute; left: -9999px; opacity: 0; }
+
+/* Íconos */
+.icon { width: 1.25em; height: 1.25em; flex: none; fill: currentColor; }
+.icon-line { width: 1.1rem; height: 1.1rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Botón de WhatsApp */
+.button-whatsapp { background: #25d366; color: #062b16; gap: 0.7rem; }
+.button-whatsapp .icon { width: 1.5rem; height: 1.5rem; }
+.button-whatsapp:hover { background: #1fbd5a; box-shadow: 0 0 32px rgba(37, 211, 102, 0.4); }
+
+/* Datos de contacto */
+.contact-details { display: grid; gap: 0.8rem; margin: 0 0 1.6rem; padding: 0; list-style: none; }
+.contact-details li { display: flex; align-items: center; gap: 0.8rem; color: var(--soft); font-size: 0.93rem; }
+.contact-details a { color: var(--ink); font-weight: 600; transition: color 0.2s; }
+.contact-details a:hover { color: var(--accent); }
+.contact-details .chip { display: grid; width: 38px; height: 38px; flex: none; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: var(--card); color: var(--accent); }
+
+/* Redes con ícono */
+.contact-links a { display: inline-flex; align-items: center; gap: 0.55rem; }
+.contact-links a .icon { width: 1.05rem; height: 1.05rem; }
+.contact-links a:hover { background: var(--card); }
