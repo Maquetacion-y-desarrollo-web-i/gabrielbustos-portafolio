@@ -967,8 +967,8 @@ button {
 
 .site-footer {
   display: flex;
+  flex-direction: column;
   min-height: 90px;
-  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   padding: 1.5rem var(--gutter);
@@ -976,21 +976,54 @@ button {
   font-size: 0.78rem;
 }
 
-.footer-brand {
-  display: grid;
-  width: 38px;
-  flex: none;
-  aspect-ratio: 1;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--grad);
-  color: #0c0620;
-  font: 700 0.72rem var(--font-display);
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  font: 700 0.9rem var(--font-display);
 }
 
-.site-footer p {
-  flex: 1;
-  margin: 0;
+.footer-brand {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-brand img {
+  width: auto;
+  height: 32px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.brand-link {
+  display: inline-flex;  
+  align-items: center;   
+  gap: 0.7rem;           
+  font: 700 0.9rem var(--font-display); 
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--soft);
+  font-size: 0.78rem;
 }
 
 .back-top {
@@ -1242,6 +1275,7 @@ button {
   .site-footer {
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: start;
   }
 
   .site-footer p {
