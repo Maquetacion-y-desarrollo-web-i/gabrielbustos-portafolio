@@ -12,7 +12,7 @@ Portafolio profesional de Gabriel Bustos, desarrollador de sitios web, aplicacio
 - Proyectos destacados con enlaces a demostraciones y repositorios.
 - Certificados y cursos en un carrusel interactivo.
 - Formulario de contacto y accesos a WhatsApp, correo, LinkedIn y GitHub.
-- Diseño adaptable a dispositivos móviles, tema claro/oscuro y animación de fondo.
+- Diseño adaptable a dispositivos móviles, tema claro/oscuro y fondo gráfico de ondas.
 
 ## Tecnologías
 
@@ -45,4 +45,3 @@ El sitio es estático y no requiere instalación de dependencias ni un proceso d
 El sitio se publica con GitHub Pages desde la rama principal del repositorio, usando la carpeta raíz como fuente. Después de publicar cambios, GitHub Pages actualiza el sitio en:
 
 https://gabrielbustos-ai.github.io/
-

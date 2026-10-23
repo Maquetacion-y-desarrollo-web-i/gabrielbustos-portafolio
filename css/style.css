@@ -225,13 +225,13 @@ button {
   overflow: hidden;
 }
 
-#bg-canvas {
+.hero::before {
   position: absolute;
   z-index: 0;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  background: url("../assets/background-ondas.png") center / 100% auto no-repeat;
   pointer-events: none;
+  content: "";
 }
 
 .hero-copy {
